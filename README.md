@@ -190,7 +190,7 @@ Nix mitigates this by validating downloaded content against its expected hash - 
 
 #### Chain of Trust with `flake.lock`
 
-All Nix Flake inputs (here `github:NixOS/nixpkgs/nixos-unstable`) are [pinned](https://zero-to-nix.com/concepts/pinning/) to specific Git commit in a lockfile called `flake.lock`. This file stores this information as JSON.
+All Nix Flake inputs (here `github:NixOS/nixpkgs/nixos-unstable`) are [pinned](https://zero-to-nix.com/concepts/pinning/) to a specific Git commit in a lockfile called `flake.lock`. This file stores this information as JSON.
 
 The `flake.lock` file ensures that Nix flakes have purely deterministic outputs. A `flake.nix` file without an accompanying `flake.lock` should be considered incomplete and a kind of proto-flake. Any Nix CLI command that is run against the flake — like `nix build`, `nix develop`, or even `nix flake show` — generates a `flake.lock` for you.
 
