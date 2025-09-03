@@ -43,8 +43,6 @@ code vscode-remote-try-nix
 
 When prompted, click **Reopen in Container**. VS Code will build the container and drop you into a fully configured containerized development environment.
 
----
-
 ## 💻 Using Nix
 
 ### 🧪 Try the Sample Script
@@ -67,8 +65,6 @@ You should see a rainbow-colored cow say something nice about Nix 😄
                 ||----w |
                 ||     ||
 ```
-
----
 
 ### 🧩 Adding New Packages
 
@@ -98,8 +94,6 @@ installNixProfilePackages = pkgs: [
 
 The Dev Container will automatically install these when it starts. To restart a Dev Container manually type `F1` and type `> Dev Containers: Rebuild Without Cache and Reopen in Container`.
 
----
-
 ### 🧪 Try Packages Temporarily
 
 Want to test a package without editing `flake.nix`?
@@ -127,8 +121,6 @@ node --version
 python --version
 > bash: python: command not found
 ```
-
----
 
 ### 🔄 Updating Packages
 
@@ -256,8 +248,6 @@ Below you will find a list of documentation for tools used in this project.
 - **Nix**: Nix Package Manager - [Docs](https://wiki.nixos.org/wiki/Nix) 
 - **Nix Flakes**: An Experimental Feature for Managing Dependencies of Nix Projects - [Docs](https://wiki.nixos.org/wiki/Flakes)
 - **GitHub Actions**: Automation and Execution of Software Development Workflows - [Docs](https://docs.github.com/en/actions) 
-
----
 
 ## 🐛 Found a Bug? 
 
